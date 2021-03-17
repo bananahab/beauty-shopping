@@ -2,7 +2,6 @@ package com.beauty.shopping.service.impl;
 
 import com.beauty.shopping.common.api.CommonResult;
 import com.beauty.shopping.common.api.ResultCode;
-import com.beauty.shopping.common.exception.CommonException;
 import com.beauty.shopping.common.utils.TokenUtil;
 import com.beauty.shopping.dao.UserInfoMapper;
 import com.beauty.shopping.entity.UserInfo;

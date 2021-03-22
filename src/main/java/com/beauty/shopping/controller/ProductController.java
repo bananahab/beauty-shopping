@@ -21,6 +21,7 @@ import javax.annotation.Resource;
 @Controller
 @RequestMapping("/product")
 @Slf4j
+@CrossOrigin
 public class ProductController {
     @Resource
     private ProductCategoryService productCategoryService;

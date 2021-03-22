@@ -4,7 +4,7 @@ import com.beauty.shopping.common.api.CommonResult;
 import com.beauty.shopping.common.api.ResultCode;
 import com.beauty.shopping.common.utils.TokenUtil;
 import com.beauty.shopping.dao.UserInfoMapper;
-import com.beauty.shopping.entity.UserInfo;
+import com.beauty.shopping.entity.UserInfoDO;
 import com.beauty.shopping.service.RedisService;
 import com.beauty.shopping.service.UmsMemberService;
 import io.jsonwebtoken.Claims;
@@ -79,7 +79,7 @@ public class UmsMemberServiceImpl implements UmsMemberService {
 
     @Override
     public CommonResult getToken(String userName, String password) {
-        UserInfo userInfo = userInfoMapper.getUserInfo(userName, password);
+        UserInfoDO userInfo = userInfoMapper.getUserInfo(userName, password);
         if (userInfo != null) {
             String token = TokenUtil.createJwtToken(String.valueOf(userInfo.getId()), issuer, ttlMillis, tokenSecret);
             return CommonResult.success(token);

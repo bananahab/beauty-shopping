@@ -2,8 +2,6 @@ package com.beauty.shopping.component.interceptor;
 
 import com.beauty.shopping.common.api.ResultCode;
 import com.beauty.shopping.common.exception.CommonException;
-import com.beauty.shopping.entity.UserInfo;
-import com.beauty.shopping.service.RedisService;
 import com.beauty.shopping.service.UmsMemberService;
 import io.micrometer.core.instrument.util.StringUtils;
 import org.springframework.stereotype.Component;

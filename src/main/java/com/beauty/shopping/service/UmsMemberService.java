@@ -1,9 +1,6 @@
 package com.beauty.shopping.service;
 
 import com.beauty.shopping.common.api.CommonResult;
-import com.beauty.shopping.entity.UserInfo;
-
-import java.util.Random;
 
 /**
  * @author wuzhenxian

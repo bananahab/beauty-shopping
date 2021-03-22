@@ -11,7 +11,7 @@ import java.util.Date;
  * 用户信息
  */
 @Data
-public class UserInfo {
+public class UserInfoDO {
     private Integer id;
     private String userName;
     private String password;

@@ -1,6 +1,6 @@
 package com.beauty.shopping.dao;
 
-import com.beauty.shopping.entity.UserInfo;
+import com.beauty.shopping.entity.UserInfoDO;
 import org.apache.ibatis.annotations.Param;
 
 /**
@@ -16,14 +16,14 @@ public interface UserInfoMapper {
      * @param password 密码
      * @return 用户信息
      */
-    UserInfo getUserInfo(@Param("userName") String userName, @Param("password") String password);
+    UserInfoDO getUserInfo(@Param("userName") String userName, @Param("password") String password);
 
     /**
      * 通过用户名查询账户信息
      * @param userName 用户名
      * @return 用户信息
      */
-    UserInfo getUserInfoByUserName(@Param("userName") String userName);
+    UserInfoDO getUserInfoByUserName(@Param("userName") String userName);
 
     /**
      * 添加新用户

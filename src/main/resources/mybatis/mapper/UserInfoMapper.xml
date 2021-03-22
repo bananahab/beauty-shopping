@@ -4,10 +4,10 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="com.beauty.shopping.dao.UserInfoMapper">
-    <select id="getUserInfo" resultType="com.beauty.shopping.entity.UserInfo">
+    <select id="getUserInfo" resultType="com.beauty.shopping.entity.UserInfoDO">
         select * from user_info where username = #{userName} and password = #{password}
     </select>
-    <select id="getUserInfoByUserName" resultType="com.beauty.shopping.entity.UserInfo">
+    <select id="getUserInfoByUserName" resultType="com.beauty.shopping.entity.UserInfoDO">
         select * from user_info where username = #{userName};
     </select>
     <insert id="addUser" >
